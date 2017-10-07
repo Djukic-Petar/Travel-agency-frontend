@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="../../css/lightbox.css">
+
+    <title>Boško travel agency</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/shop-item.css" rel="stylesheet">
+
+    <link href="../../css/dropdown.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="nav" role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+        <script type="text/javascript">
+            $( function()
+            {
+                $( '#nav li:has(ul)' ).doubleTapToGo();
+            });
+        </script>
+        <img src="../../images/logo_placeholder.png" width="100" height="75">
+        <a href="#nav" title="Show navigation" class="navbar-toggle">Menu</a>
+        <a href="#" title="Hide navigation" class="navbar-toggle">Menu</a>
+        <ul>
+            <!-- <a class="navbar-brand" href="#">BOŠKO - LOGO</a> -->
+            <li><a href="../index.html">Home</a></li>
+            <li>
+                <a href="/" aria-haspopup="true">About us</a>
+                <ul>
+                    <li><a href="../About-us/Informacije.html">Informations</a></li>
+                    <li><a href="../About-us/Nagrade.html">Awards</a></li>
+                    <li><a href="../About-us/Kontakt.html">Contact</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/" aria-haspopup="true">Summer 2016</a>
+                <ul>
+                    <li><a href="../Summer-2016/Barselona.html">Barcelona</a></li>
+                    <li><a href="../Summer-2016/Napulj.html">Napoli</a></li>
+                    <li><a href="../Summer-2016/Rimini.html">Rimini</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/" aria-haspopup="true">European cities</a>
+                <ul>
+                    <li><a href="../European-cities/Pariz.html">Paris</a></li>
+                    <li><a href="../European-cities/London.html">London</a></li>
+                    <li><a href="../European-cities/Lisabon.html">Lisbon</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/" aria-haspopup="true">Remote destinations</a>
+                <ul>
+                    <li><a href="../Remote-destinations/Nepal.html">Nepal</a></li>
+                    <li><a href="../Remote-destinations/Tokio.html">Tokyo</a></li>
+                    <li><a href="../Remote-destinations/Bankok.html">Bangkok</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/" aria-haspopup="true">New year 2017</a>
+                <ul>
+                    <li><a href="../New-year-2017/Bec.html">Wien</a></li>
+                    <li><a href="../New-year-2017/Prag.html">Prague</a></li>
+                    <li><a href="../New-year-2017/Budimpesta.html">Budapest</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../../Daleke-destinacije/Bankok.html">
+                    <img width="30px" heigth="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/2000px-Flag_of_Serbia.svg.png">
+                    </img>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3 well">
+                <p class="lead">Boško travel agency <br> </p>
+                
+                <form name="forma">
+                    <label>Choose your price range:</label>
+                    <input type="radio" name="cena" value="manje od 25">under 25$</input>
+                    <input type="radio" name="cena" value="više od 25">over 25$</input> 
+                    <br>
+                    <input type="button" name="dugme" value="Filtriraj" onclick="filtriraj()">
+
+                    <script type="text/javascript">
+                        function filtriraj()
+                        {
+                            var cena = document.forms.forma.cena.value;
+                            
+                            if (cena == "manje od 25")
+                            {
+                                document.getElementById('2').style.visibility = "hidden";
+                                document.getElementById('1').style.visibility = "";
+                            }
+                            else if(cena == "više od 25")
+                            {
+                                document.getElementById('2').style.visibility = "";
+                                document.getElementById("1").style.visibility = "hidden";
+                            }
+                        }
+                    </script>
+                </form>
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="thumbnail">
+                    <img class="img-responsive" src="http://www.spain.info/export/sites/spaininfo/comun/carrusel-recursos/cataluna/barcelona-000037111798-istock.jpg_369272544.jpg" alt="Grad barselona">
+                    <div class="caption-full">
+                    <section>
+                     <div class="row">
+                         <div class="col-md-3">
+                          <a  class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title=""><img style="width:50px; height:70px;" class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a></div>
+                          <div class="col-md-3">
+                          <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title=""><img style="width:50px; height:70px;" class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a></div>
+                          <div class="col-md-3">
+                          <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title=""><img style="width:50px; height:70px;" class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a></div>
+                          <div class="col-md-3">
+                          <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title=""><img style="width:50px; height:70px;" class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a></div>
+                    </div>
+                    </section>
+                    <div class="row">
+                        <ul>
+                            <li id="1">  <a href="Bankok-hotels/hotel-bankok1.html">Hotel Bangkok1 $24.99</a>  </li>
+                            <li id="2">  <a href="Bankok-hotels/hotel-bankok2.html">Hotel Bangkok2 $34.69</a>  </li>
+                        </ul>
+                    </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+                        <label>OFFERS:</label>
+                        <a href="../../cenovnik/offers.pdf">PDF (click me)</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Stefan Azarić, Petar Đukić - Elektrotehnički Fakultet U Beogradu - 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <script src="../../js/lightbox.js"></script>
+
+    <script type="text/javascript" src="../../js/doubletaptogo.js"></script>
+
+</body>
+
+</html>
